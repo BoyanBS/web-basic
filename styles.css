@@ -2,6 +2,22 @@ body {
 background-color: antiquewhite;
 }
 
+.navColor{
+    background-color: rgb(131, 56, 236);
+    color: rgb(255, 255, 255);
+    font-size: large;
+}
+/* Theme color button */
+.min{
+    width: 200px;
+}
+.label{
+    min-width: 200px;
+    color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 419px) {
+    .min {width: 120px; float: left;}
+  }
 .message {
     min-height: 300px;
     overflow-x: hidden;
@@ -12,10 +28,12 @@ background-color: antiquewhite;
     overflow-x: hidden;
     word-break: break-all;
 }
+
 .cardContainer{
     background-color: darkgrey;
     border-radius: 20px;
 }
+
 .colorContainer {
     border-radius: 10px;
     display: flex;
@@ -26,9 +44,7 @@ background-color: antiquewhite;
  margin-top: 5px;
  margin-bottom: 200px;
 } 
-.min{
-    min-width: 120px;
-}
+
 /* animation-loading */
 #loader {
     position: absolute;
@@ -41,9 +57,9 @@ background-color: antiquewhite;
     border: 16px solid #f3f3f3;
     border-radius: 50%;
     border-top: 16px solid blue;
-    border-right: 16px solid green;
-    border-bottom: 16px solid red;
-    border-left: 16px solid pink;
+    border-right: 16px solid rgb(170, 121, 238);
+    border-bottom: 16px solid blue;
+    border-left: 16px solid rgb(170, 121, 238);
     width: 120px;
     height: 120px;
     -webkit-animation: spin 2s linear infinite;
