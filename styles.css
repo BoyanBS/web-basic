@@ -1,10 +1,9 @@
 body {
-/* background-color: rgb(132, 0, 255); */
 background-color: antiquewhite;
 }
 
 .message {
-    min-height: 400px;
+    min-height: 300px;
     overflow-x: hidden;
     word-break: break-all;
 }

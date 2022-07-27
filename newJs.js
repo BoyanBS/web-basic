@@ -46,30 +46,35 @@ function setInfo(data) {
     document.getElementById("textLogger").innerHTML = data;
 }
 
-function changer() {
-    let text = document.getElementById("colorChanger").value;
-    if (text === "red") {
-        document.getElementById("contain").style.backgroundColor = "red"
-    } else if (text === "purple") {
-        document.getElementById("contain").style.backgroundColor = "purple"
-    } else if (text === "grey") {
-        document.getElementById("contain").style.backgroundColor = "grey"
-    } else if (text === "green") {
-        document.getElementById("contain").style.backgroundColor = "green"
-    } else {
-        document.getElementById("contain").style.backgroundColor = "antiquewhite"
-    }
-
-
-    // switch (num) {
-    //     case 5:
-    //         console.log(5)
-    //         return  5;
-    //     case 10:
-    //         console.log(10)
-    //         break;
-    //     default:
-    //         break;
-    // }
+const colors = {
+    normal : "antiquewhite",
+    red : "red",
+    grey : "grey",
+    green : "green",
+    purple : "purple"
 }
 
+function changer() {
+    let selectedColor = document.getElementById("colorChanger").value;
+    switch (selectedColor){
+        case "red" :
+            setColor(colors.red)
+            break;
+            case "grey" :
+                setColor(colors.grey)
+                break;
+                case "green" :
+                    setColor(colors.green)
+                    break;
+                    case "purple" :
+                        setColor(colors.purple)
+                        break;
+                        default:
+                            document.getElementById("contain").style.backgroundColor = "antiquewhite";
+                            break;
+    }
+}
+
+function setColor(colors) {
+    document.getElementById("contain").style.backgroundColor = colors;
+}
