@@ -1,0 +1,32 @@
+body {
+/* background-color: rgb(132, 0, 255); */
+background-color: antiquewhite;
+}
+
+.message {
+    min-height: 400px;
+    overflow-x: hidden;
+    word-break: break-all;
+}
+
+.inputStyle {
+    overflow-x: hidden;
+    word-break: break-all;
+}
+.cardContainer{
+    background-color: darkgrey;
+    border-radius: 20px;
+}
+.colorContainer {
+    border-radius: 10px;
+    display: flex;
+    width: auto;
+    justify-content: start;
+ padding: 15px;
+ background-color: darkgrey;
+ margin-top: 5px;
+ margin-bottom: 200px;
+} 
+.min{
+    min-width: 120px;
+}
