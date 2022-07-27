@@ -78,3 +78,13 @@ function changer() {
 function setColor(colors) {
     document.getElementById("contain").style.backgroundColor = colors;
 }
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
