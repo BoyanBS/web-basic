@@ -56,22 +56,22 @@ const colors = {
 
 function changer() {
     let selectedColor = document.getElementById("colorChanger").value;
-    switch (selectedColor){
-        case "red" :
+    switch (selectedColor) {
+        case "red":
             setColor(colors.red)
             break;
-            case "grey" :
-                setColor(colors.grey)
-                break;
-                case "green" :
-                    setColor(colors.green)
-                    break;
-                    case "purple" :
-                        setColor(colors.purple)
-                        break;
-                        default:
-                            document.getElementById("contain").style.backgroundColor = "antiquewhite";
-                            break;
+        case "grey":
+            setColor(colors.grey)
+            break;
+        case "green":
+            setColor(colors.green)
+            break;
+        case "purple":
+            setColor(colors.purple)
+            break;
+        default:
+            setColor(colors.normal)
+            break; 
     }
 }
 
@@ -88,3 +88,8 @@ function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("myDiv").style.display = "block";
 }
+
+window.addEventListener("load", () => { 
+    const select = document.getElementById("colorChanger");
+    select.addEventListener("change", () => changer());
+  });

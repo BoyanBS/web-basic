@@ -1,18 +1,14 @@
-body {
-background-color: antiquewhite;
-}
-
 .navColor{
     background-color: rgb(131, 56, 236);
     color: rgb(255, 255, 255);
     font-size: large;
 }
 /* Theme color button */
-.min{
+.labelFormSize{
     width: 200px;
 }
 @media screen and (max-width: 419px) {
-    .min {width: 120px; float: left;}
+    .labelFormSize {width: 120px; float: left;}
   }
 .message {
     min-height: 300px;
@@ -46,6 +42,8 @@ background-color: antiquewhite;
     position: absolute;
     left: 50%;
     top: 50%;
+    right: 50%;
+    left: 50%;
     z-index: 1;
     width: 120px;
     height: 120px;
