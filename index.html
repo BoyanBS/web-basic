@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,53 +13,53 @@
 </head>
 
 <body onload="myFunction()" id="contain">
-        <div class="container-fluid p-0">
-            <div class="row">
-                <nav class="navbar navColor px-4">
-                    <div>
-                        <img src="https://it.schwarz/en/asset/download/3118/svg/schwarz-gruppe.svg?version=1"
-                            style="width: 50px;" alt="">
-                        <a class="navbar-brand navColor p-2" href="https://it.schwarz/en/it-hubs/bulgaria">Schwarz
-                            IT</a>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navColor px-4">
+                <div>
+                    <img src="https://it.schwarz/en/asset/download/3118/svg/schwarz-gruppe.svg?version=1"
+                        style="width: 50px;" alt="">
+                    <a class="navbar-brand navColor p-2" href="https://it.schwarz/en/it-hubs/bulgaria">Schwarz
+                        IT</a>
+                </div>
+                <div class="labelFormSize">
+                    <label for="colorChanger">Theme color</label>
+                    <select class="form-select" id="colorChanger">
+                        <option selected>Normal</option>
+                        <option value="red">Red</option>
+                        <option value="grey">Grey</option>
+                        <option value="green">Green</option>
+                        <option value="purple">Purple</option>
+                    </select>
+                </div>
+            </nav>
+        </div>
+        <div id="loader"></div>
+        <div class="animate-bottom" style="display:none;" id="myDiv">
+            <div class="row p-0 vh-100">
+                <div class="col-12 col-sm-3">
+                    <div class="d-flex flex-column justify-content-center">
+                        <button class="btn btn-primary my-2" onclick=get()>
+                            Execute
+                        </button>
+                        <button class="btn btn-primary my-2" onclick=post()>
+                            Execute
+                        </button>
+                        <button class="btn btn-primary my-2" onclick=deleteCall()>
+                            Execute
+                        </button>
                     </div>
-                    <div class="labelFormSize">
-                        <label for="colorChanger">Theme color</label>
-                        <select class="form-select" id="colorChanger">
-                            <option selected >Normal</option>
-                            <option value="red" >Red</option>
-                            <option value="grey">Grey</option>
-                            <option value="green">Green</option>
-                            <option value="purple">Purple</option>
-                        </select>
+                </div>
+                <div class="col-12 col-sm-9 p-3 border-start border-4 border-dark">
+                    <div
+                        class="d-flex justify-content-center message bg-light rounded border border-5 border-primary p-5">
+                        <h6 id="textLogger"></h6>
                     </div>
-                </nav>
-            </div>
-            <div id="loader"></div>
-            <div class="animate-bottom" style="display:none;" id="myDiv">
-                <div class="row p-0 vh-100">
-                    <div class="col-12 col-sm-3">
-                        <div class="d-flex flex-column justify-content-center">
-                            <button class="btn btn-primary my-2" onclick=get()>
-                                Execute
-                            </button>
-                            <button class="btn btn-primary my-2" onclick=post()>
-                                Execute
-                            </button>
-                            <button class="btn btn-primary my-2" onclick=deleteCall()>
-                                Execute
-                            </button>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-9 p-3 border-start border-4 border-dark">
-                        <div
-                            class="d-flex justify-content-center message bg-light rounded border border-5 border-primary p-5">
-                            <h6 id="textLogger"></h6>
-                        </div>
 
-                    </div>
                 </div>
             </div>
         </div>
+    </div>
     <script src="newJs.js">
     </script>
 
