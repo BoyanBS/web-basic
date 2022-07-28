@@ -6,15 +6,21 @@ body{
     color: rgb(255, 255, 255);
     font-size: large;
 }
+.border1{
+  border-right: rgb(131, 56, 236);
+}
 /* Theme color button */
 .labelFormSize{
     width: 200px;
+}
+hr{
+  transform: rotate(90deg);
 }
 @media screen and (max-width: 419px) {
     .labelFormSize {width: 120px; float: left;}
   }
 .message {
-    min-height: 300px;
+    min-height: 200px;
     overflow-x: hidden;
     word-break: break-all;
 }
@@ -90,9 +96,4 @@ body{
   @keyframes animatebottom { 
     from{ bottom:-100px; opacity:0 } 
     to{ bottom:0; opacity:1 }
-  }
-  
-  #myDiv {
-    display: none;
-    text-align: center;
   }
