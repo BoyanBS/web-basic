@@ -1,98 +1,129 @@
-body{
+body {
   background-color: antiquewhite;
   overflow-x: hidden;
 }
-.navColor{
-    background-color: rgb(131, 56, 236);
-    color: rgb(255, 255, 255);
-    font-size: large;
-}
-.border1{
-  border-right: rgb(131, 56, 236);
-}
-/* Theme color button */
-.labelFormSize{
-    width: 200px;
+
+.navColor {
+  background-color: rgb(131, 56, 236);
+  color: rgb(255, 255, 255);
+  font-size: large;
 }
 
-@media screen and (max-width: 419px) {
-    .labelFormSize {width: 120px; float: left;}
+.border1 {
+  border-right: rgb(131, 56, 236);
+}
+
+/* Theme color button */
+.labelFormSize {
+  width: 200px;
+}
+
+@media screen and (max-width: 575px) {
+  .labelFormSize {
+    width: 120px;
+    float: left;
   }
+}
+
 .message {
-    min-height: 200px;
-    overflow-x: hidden;
-    word-break: break-all;
+  min-height: 200px;
+  overflow-x: hidden;
+  word-break: break-all;
 }
 
 .inputStyle {
-    overflow-x: hidden;
-    word-break: break-all;
+  overflow-x: hidden;
+  word-break: break-all;
 }
 
-.cardContainer{
-    background-color: darkgrey;
-    border-radius: 20px;
+.cardContainer {
+  background-color: darkgrey;
+  border-radius: 20px;
 }
 
 .colorContainer {
-    border-radius: 10px;
-    display: flex;
-    width: auto;
-    justify-content: start;
- padding: 15px;
- background-color: darkgrey;
- margin-top: 5px;
- margin-bottom: 200px;
-} 
+  border-radius: 10px;
+  display: flex;
+  width: auto;
+  justify-content: start;
+  padding: 15px;
+  background-color: darkgrey;
+  margin-top: 5px;
+  margin-bottom: 200px;
+}
 
 /* animation-loading */
 #loader {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    right: 50%;
-    left: 50%;
-    z-index: 1;
-    width: 120px;
-    height: 120px;
-    margin: -76px 0 0 -76px;
-    border: 16px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid blue;
-    border-right: 16px solid rgb(170, 121, 238);
-    border-bottom: 16px solid blue;
-    border-left: 16px solid rgb(170, 121, 238);
-    width: 120px;
-    height: 120px;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  right: 50%;
+  left: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-right: 16px solid rgb(170, 121, 238);
+  border-bottom: 16px solid blue;
+  border-left: 16px solid rgb(170, 121, 238);
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
   }
-  
-  @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
+
+  100% {
+    -webkit-transform: rotate(360deg);
   }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
-  
-  /* animations-page" */
-  .animate-bottom {
-    position: relative;
-    -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 1s;
-    animation-name: animatebottom;
-    animation-duration: 1s
+
+  100% {
+    transform: rotate(360deg);
   }
-  
-  @-webkit-keyframes animatebottom {
-    from { bottom:-100px; opacity:0 } 
-    to { bottom:0px; opacity:1 }
+}
+
+/* animations-page" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0
   }
-  
-  @keyframes animatebottom { 
-    from{ bottom:-100px; opacity:0 } 
-    to{ bottom:0; opacity:1 }
+
+  to {
+    bottom: 0px;
+    opacity: 1
   }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1
+  }
+}
