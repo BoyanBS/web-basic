@@ -21,6 +21,7 @@ body {
   .labelFormSize {
     width: 120px;
     float: left;
+    
   }
 }
 
@@ -125,4 +126,11 @@ body {
     bottom: 0;
     opacity: 1
   }
+}
+.footerAnchorTags{
+  color: white;
+  text-decoration-line: none;
+}
+.footerContainer{
+  background-color:  rgb(131, 56, 236);
 }

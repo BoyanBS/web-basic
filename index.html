@@ -17,10 +17,11 @@
         <div class="row">
             <nav class="navbar navColor px-4">
                 <div>
+                    <a href="https://it.schwarz/en/it-hubs/bulgaria">
                     <img src="https://it.schwarz/en/asset/download/3118/svg/schwarz-gruppe.svg?version=1"
-                        style="width: 50px;" alt="">
-                    <a class="navbar-brand navColor p-2" href="https://it.schwarz/en/it-hubs/bulgaria">Schwarz
-                        IT</a>
+                        style="width: 50px;" alt="Schwarz Logo">
+                        <h2 class="d-inline footerAnchorTags">Schwarz IT</h2>
+                    </a>
                 </div>
                 <div class="labelFormSize">
                     <label for="colorChanger">Theme color</label>
@@ -36,21 +37,21 @@
         </div>
         <div id="loader"></div>
         <div class="animate-bottom" style="display:none;" id="myDiv">
-            <div class="row p-0 vh-100">
+            <div class="row p-0">
                 <div class="col-12 col-sm-3">
                     <div class="d-flex flex-column justify-content-center">
-                        <button class="btn btn-primary my-2" onclick=get()>
+                        <button class="btn btn-primary mt-4 mb-2 py-3" onclick=get()>
                             GET
                         </button>
-                        <button class="btn btn-primary my-2" onclick=post()>
+                        <button class="btn btn-primary my-2 py-3" onclick=post()>
                             POST
                         </button>
-                        <button class="btn btn-primary my-2" onclick=deleteCall()>
+                        <button class="btn btn-primary my-2 py-3" onclick=deleteCall()>
                             DELETE
                         </button>
                     </div>
                 </div>
-                <div class="col-12 col-sm-9 p-3 border-start border-4 border-dark">
+                <div class="col-12 col-sm-9 p-3 border-start border-4 border-dark vh-100">
                     <div
                         class="d-flex justify-content-center message bg-light rounded border border-5 border-primary p-5">
                         <h6 id="textLogger"></h6>
@@ -58,7 +59,19 @@
 
                 </div>
             </div>
+            <div class="row">
+               <div class="col">
+                <nav class="navbar navColor px-4">
+                    <div>
+                        <a class="navbar-brand navColor p-2" href="https://it.schwarz/en/it-hubs/bulgaria">
+                            About me</a>
+                    </div>
+                    <h3>Educational Purpose</h3>
+                </nav>
+               </div>
+            </div>
         </div>
+           
     </div>
     <script src="newJs.js">
     </script>
