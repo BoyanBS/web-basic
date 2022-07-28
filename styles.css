@@ -1,5 +1,6 @@
 body{
   background-color: antiquewhite;
+  overflow-x: hidden;
 }
 .navColor{
     background-color: rgb(131, 56, 236);
