@@ -13,9 +13,7 @@ body{
 .labelFormSize{
     width: 200px;
 }
-hr{
-  transform: rotate(90deg);
-}
+
 @media screen and (max-width: 419px) {
     .labelFormSize {width: 120px; float: left;}
   }
