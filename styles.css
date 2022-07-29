@@ -21,7 +21,10 @@ body {
   .labelFormSize {
     width: 120px;
     float: left;
-    
+  }
+  .footer{
+    font-size: x-small;
+    height: 30%;
   }
 }
 
@@ -131,6 +134,24 @@ body {
   color: white;
   text-decoration-line: none;
 }
-.footerContainer{
-  background-color:  rgb(131, 56, 236);
+
+.footer{
+  width: 99%;
+  height: 25%;
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(131, 56, 236);
+  /* padding: 60px; */
+  /* margin-left: 0px; */
+  
+  color: white;
+}
+/* .myRow1{
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+}  */
+.footer2{
+  background-color: rgb(131, 56, 236);
+  border-top-left-radius: 125px;
 }
