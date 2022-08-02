@@ -6,15 +6,13 @@ body {
   color: rgb(255, 255, 255);
   font-size: large;
 }
-.border1 {
-  border-right: rgb(131, 56, 236);
-}
+
 /* Theme color button */
 .labelFormSize {
   width: 200px;
 }
-
-.message {
+/* Text Logger */
+.responsePrint {
   min-height: 400px;
   overflow-x: hidden;
   word-break: break-all;
@@ -23,20 +21,7 @@ body {
   overflow-x: hidden;
   word-break: break-all;
 }
-.cardContainer {
-  background-color: darkgrey;
-  border-radius: 20px;
-}
-.colorContainer {
-  border-radius: 10px;
-  display: flex;
-  width: auto;
-  justify-content: start;
-  padding: 15px;
-  background-color: darkgrey;
-  margin-top: 5px;
-  margin-bottom: 200px;
-}
+
 /* animation-loading */
 #loader {
   z-index: 1;
@@ -97,16 +82,6 @@ body {
   }
 }
 
-.footerAnchorTags{
-  color: white;
-  text-decoration-line: none;
-}
-
-.footer {
-  background-color: rgb(131, 56, 236);
-  /* border-top-left-radius: 125px; */
-}
-
 /* Loading */
 .loading {
   position: fixed;
@@ -119,7 +94,6 @@ body {
 }
 
 .spinner-box {
-  /* border: 1px solid red; */
   width: 120px;
   height: 120px;
   position: fixed;
@@ -132,12 +106,11 @@ body {
 .section-content {
   min-height: 70vh;
 }
-
-/* Footer  */
+/* Dividing line */
 .verticalHr{
   border-left: 0px solid;
 }
-
+/* Media queries */
 @media screen and (max-width: 575px) {
   .labelFormSize {
     width: 120px;
@@ -153,4 +126,13 @@ body {
   .verticalHr{
     border-left: 3px solid;
   }
+}
+
+/* Footer */
+.footerAnchorTags{
+  color: white;
+  text-decoration-line: none;
+}
+.footer {
+  background-color: rgb(131, 56, 236);
 }
