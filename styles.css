@@ -1,6 +1,3 @@
-body {
-  background-color: antiquewhite;
-}
 .navColor {
   background-color: rgb(131, 56, 236);
   color: rgb(255, 255, 255);
@@ -11,6 +8,7 @@ body {
 .labelFormSize {
   width: 200px;
 }
+
 /* Text Logger */
 .responsePrint {
   min-height: 400px;
@@ -36,6 +34,7 @@ body {
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
+
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -52,6 +51,7 @@ body {
     transform: rotate(360deg);
   }
 }
+
 /* animations-page" */
 .animate-bottom {
   position: relative;
@@ -60,6 +60,7 @@ body {
   animation-name: animatebottom;
   animation-duration: 1s
 }
+
 @-webkit-keyframes animatebottom {
   from {
     bottom: -100px;
@@ -104,12 +105,18 @@ body {
 
 /* Content */
 .section-content {
-  min-height: 70vh;
+  min-height: 90vh;
+  background-color: antiquewhite;
+}
+
+#contain{
+  min-height: calc(100%-81px-112px);
 }
 /* Dividing line */
 .verticalHr{
   border-left: 0px solid;
 }
+
 /* Media queries */
 @media screen and (max-width: 575px) {
   .labelFormSize {
