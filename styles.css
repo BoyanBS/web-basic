@@ -13,16 +13,7 @@ body {
 .labelFormSize {
   width: 200px;
 }
-@media screen and (max-width: 575px) {
-  .labelFormSize {
-    width: 120px;
-    float: left;
-  }
-  .footer{
-    font-size: x-small;
-    height: 30%;
-  }
-}
+
 .message {
   min-height: 200px;
   overflow-x: hidden;
@@ -52,9 +43,9 @@ body {
   border: 16px solid #f3f3f3;
   border-radius: 50%;
   border-top: 16px solid blue;
-  border-right: 16px solid rgb(170, 121, 238);
+  border-right: 16px solid  rgb(180, 130, 240);
   border-bottom: 16px solid blue;
-  border-left: 16px solid rgb(170, 121, 238);
+  border-left: 16px solid rgb(180, 130, 240);
   width: 120px;
   height: 120px;
   -webkit-animation: spin 2s linear infinite;
@@ -94,6 +85,7 @@ body {
     opacity: 1
   }
 }
+
 @keyframes animatebottom {
   from {
     bottom: -100px;
@@ -104,14 +96,17 @@ body {
     opacity: 1
   }
 }
+
 .footerAnchorTags{
   color: white;
   text-decoration-line: none;
 }
+
 .footer {
   background-color: rgb(131, 56, 236);
   /* border-top-left-radius: 125px; */
 }
+
 /* Loading */
 .loading {
   position: fixed;
@@ -122,6 +117,7 @@ body {
   background-color: antiquewhite;
   z-index: 999;
 }
+
 .spinner-box {
   /* border: 1px solid red; */
   width: 120px;
@@ -130,9 +126,31 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-} 
+}
+
 /* Content */
 .section-content {
   min-height: 70vh;
 }
+
 /* Footer  */
+.verticalHr{
+  border-left: 0px solid;
+}
+
+@media screen and (max-width: 575px) {
+  .labelFormSize {
+    width: 120px;
+    float: left;
+  }
+  .footer{
+    font-size: x-small;
+    height: 30%;
+  }
+}
+
+@media screen and (min-width: 575px) {
+  .verticalHr{
+    border-left: 3px solid;
+  }
+}
