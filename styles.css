@@ -1,22 +1,18 @@
 body {
   background-color: antiquewhite;
 }
-
 .navColor {
   background-color: rgb(131, 56, 236);
   color: rgb(255, 255, 255);
   font-size: large;
 }
-
 .border1 {
   border-right: rgb(131, 56, 236);
 }
-
 /* Theme color button */
 .labelFormSize {
   width: 200px;
 }
-
 @media screen and (max-width: 575px) {
   .labelFormSize {
     width: 120px;
@@ -27,23 +23,19 @@ body {
     height: 30%;
   }
 }
-
 .message {
   min-height: 200px;
   overflow-x: hidden;
   word-break: break-all;
 }
-
 .inputStyle {
   overflow-x: hidden;
   word-break: break-all;
 }
-
 .cardContainer {
   background-color: darkgrey;
   border-radius: 20px;
 }
-
 .colorContainer {
   border-radius: 10px;
   display: flex;
@@ -54,18 +46,9 @@ body {
   margin-top: 5px;
   margin-bottom: 200px;
 }
-
 /* animation-loading */
 #loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  right: 50%;
-  left: 50%;
   z-index: 1;
-  width: 120px;
-  height: 120px;
-  margin: -76px 0 0 -76px;
   border: 16px solid #f3f3f3;
   border-radius: 50%;
   border-top: 16px solid blue;
@@ -77,27 +60,22 @@ body {
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
-
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
   }
-
   100% {
     -webkit-transform: rotate(360deg);
   }
 }
-
 @keyframes spin {
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(360deg);
   }
 }
-
 /* animations-page" */
 .animate-bottom {
   position: relative;
@@ -106,25 +84,21 @@ body {
   animation-name: animatebottom;
   animation-duration: 1s
 }
-
 @-webkit-keyframes animatebottom {
   from {
     bottom: -100px;
     opacity: 0
   }
-
   to {
     bottom: 0px;
     opacity: 1
   }
 }
-
 @keyframes animatebottom {
   from {
     bottom: -100px;
     opacity: 0
   }
-
   to {
     bottom: 0;
     opacity: 1
@@ -134,24 +108,31 @@ body {
   color: white;
   text-decoration-line: none;
 }
-
-.footer{
-  width: 99%;
-  height: 25%;
-  position: absolute;
-  bottom: 0;
+.footer {
   background-color: rgb(131, 56, 236);
-  /* padding: 60px; */
-  /* margin-left: 0px; */
-  
-  color: white;
+  /* border-top-left-radius: 125px; */
 }
-/* .myRow1{
-  display: flex;
-  justify-content: center;
-  margin: 0px;
-}  */
-.footer2{
-  background-color: rgb(131, 56, 236);
-  border-top-left-radius: 125px;
+/* Loading */
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: antiquewhite;
+  z-index: 999;
 }
+.spinner-box {
+  /* border: 1px solid red; */
+  width: 120px;
+  height: 120px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} 
+/* Content */
+.section-content {
+  min-height: 70vh;
+}
+/* Footer  */
