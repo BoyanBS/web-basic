@@ -105,13 +105,10 @@
 
 /* Content */
 .section-content {
-  min-height: 90vh;
+  min-height: calc(100vh - 81px - 112px);
   background-color: antiquewhite;
 }
 
-#contain{
-  min-height: calc(100%-81px-112px);
-}
 /* Dividing line */
 .verticalHr{
   border-left: 0px solid;
