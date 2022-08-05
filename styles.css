@@ -105,7 +105,7 @@
 
 /* Content */
 .section-content {
-  min-height: calc(100vh - 81px - 112px);
+  min-height: calc(100vh - 81px - 60px);
   background-color: antiquewhite;
 }
 
@@ -122,7 +122,10 @@
   }
   .footer{
     font-size: x-small;
-    height: 30%;
+    height: 10%;
+  }
+  .footerIcons{
+    width: 15px;
   }
 }
 
@@ -139,4 +142,12 @@
 }
 .footer {
   background-color: rgb(131, 56, 236);
+}
+
+.footerPadding {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.footerIcons{
+  width: 30px;
 }

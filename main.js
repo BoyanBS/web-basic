@@ -106,3 +106,4 @@ window.addEventListener("load", () => {
   function setInfo(data) {
     document.getElementById("textLogger").innerHTML = data;
   }
+  
