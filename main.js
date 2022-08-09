@@ -3,22 +3,27 @@ window.addEventListener("load", () => {
       document.getElementById("loading").style.display = "none";
     }, 1000);
 
+    
+    // if(localSelectedColor !== null ) {
+    //   setColor(localSelectedColor) 
+     
+      // options.forEach((option, index) =>  {
+      //     if(option.value === localSelectedColor ) {
+      //       document.getElementById("colorChanger").options[index].selected = true;
+      //     }
+      // });
+    // } 
     const localSelectedColor = localStorage.getItem('chosenColor');
-    console.log('selectedColor', localSelectedColor);
-
-    // Information After Reload
-    if(!!localSelectedColor) {
+    console.log(localSelectedColor)
+    
+    const options = [...document.getElementById("colorChanger").options];
+    for (let i = 0; i<options.length; i++) {
       setColor(localSelectedColor) 
-
-      const options = [...document.getElementById("colorChanger").options];
-
-      options.forEach((option, index) => {
-          if(option.value === localSelectedColor ) {
-            document.getElementById("colorChanger").options[index].selected = true;
-          }
-      });
-    } 
-
+      if(options[i].value === localSelectedColor ) {
+        document.getElementById("colorChanger").options[i].selected = true;
+      }
+      
+    }
     const select = document.getElementById("colorChanger");
     select.addEventListener("change", () => changer());
   });
@@ -58,12 +63,22 @@ window.addEventListener("load", () => {
     document.getElementById("contain").style.backgroundColor = colors;
   }
 
+  // Format
+
+  let input = document.getElementById("textLogger");
+function komo() {
+  let formatted = JSON.stringify(JSON.parse(input.value), null, 4);
+  input.innerHTML = formatted;
+};
  
 
   // Requests
   function get() {
     fetch("https://jsonplaceholder.typicode.com/users")
-      .then((response) => response.json())
+    .then((Response) => {
+      console.log(Response);
+      return Response.json();
+    })
       .then((json) => setInfo(JSON.stringify(json[0])));
   }
 
@@ -107,3 +122,9 @@ window.addEventListener("load", () => {
     document.getElementById("textLogger").innerHTML = data;
   }
   
+  
+  function actualClear(){
+    document.getElementById("textLogger").innerHTML = ""
+    console.log("Successful Clear")
+  }
+

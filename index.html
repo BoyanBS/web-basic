@@ -50,13 +50,18 @@
                     <button class="btn btn-primary my-2 py-3" onclick=deleteCall()>
                         DELETE
                     </button>
+                    <button class="btn btn-primary my-2 py-3" onclick=actualClear()>
+                        CLEAR
+                    </button>
+                    <button class="btn btn-primary my-2 py-3" onclick=komo()>
+                        FORMAT
+                    </button>
                 </div>
             </div>
             <div class="col-12 col-sm-9 p-3 verticalHr">
-                <div class="d-flex justify-content-center responsePrint bg-light rounded border border-5 border-primary p-5">
-                    <h6 id="textLogger"></h6>
+                <div class="d-flex justify-content-center responsePrint bg-light rounded border border-5 border-primary">
+                    <textarea name="" id="textLogger" cols="200"></textarea>
                 </div>
-            </div>
         </section>
         <!-- Footer -->
         <footer class="row footer text-white pt-3 pb-1">
