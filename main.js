@@ -79,7 +79,7 @@ function komo() {
       console.log(Response);
       return Response.json();
     })
-      .then((json) => setInfo(JSON.stringify(json[0])));
+      .then((json) => setInfo(JSON.stringify(json)));
   }
 
   function post() {
